@@ -9,7 +9,8 @@ $(document).ready(function() {
         age: $('input[name="age"]:checked').val(),
         status: $('input[name="status"]:checked').val(),
         kids: $('input[name="kids"]:checked').val(),
-        dogs: $('input[name="dogs"]:checked').val()
+        dogs: $('input[name="dogs"]:checked').val(),
+        location: $('input[name="zip"]').val()
       },
       function(pets) {
         pets.forEach(function(pet) {

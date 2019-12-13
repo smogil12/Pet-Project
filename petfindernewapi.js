@@ -29,6 +29,7 @@
   function getPets(filters, cb = null) {
     let queryParams = "type=dog&";
     for (let filter in filters) {
+      // TODO: check for supported filters in addition to undefined filter values
       if (filters[filter]) {
         queryParams += `${filter}=${filters[filter]}&`;
       }

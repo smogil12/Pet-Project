@@ -47,14 +47,8 @@ h2 {
   cursor: pointer;
 }
 
-.navbar-brand {
+.navbar {
   height: 80px;
   width: 100%;
   background-color: lightskyblue;
 }
-
-/* .navbar-menu {
-  height: 80px;
-  width: 100%;
-  background-color: lightskyblue;
-} */

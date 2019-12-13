@@ -29,10 +29,10 @@
   function getPets(filters, cb = null) {
     let queryParams = "type=dog&";
     for (let filter in filters) {
-      queryParams += `${filter}=${filters[filter]}&`;
+      if (filters[filter]) {
+        queryParams += `${filter}=${filters[filter]}&`;
+      }
     }
-
-    const test = "TEST";
     PetfinderAPI.get(`/animals?${queryParams}`, {
       headers: { Authorization: authHeader }
     })

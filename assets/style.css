@@ -23,6 +23,10 @@ h4 {
   text-align: center;
   color: #444444;
 }
+h1,
+h2 {
+  text-align: center;
+}
 
 .social {
   width: 40px;
@@ -42,3 +46,15 @@ h4 {
   margin: 5px;
   cursor: pointer;
 }
+
+.navbar-brand {
+  height: 80px;
+  width: 100%;
+  background-color: lightskyblue;
+}
+
+/* .navbar-menu {
+  height: 80px;
+  width: 100%;
+  background-color: lightskyblue;
+} */

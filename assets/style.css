@@ -55,6 +55,7 @@ h2 {
   position: absolute;
 } */
 
+
 /* .slider-image {
   float: left;
   margin: 0px;
@@ -132,4 +133,12 @@ h2 {
   font-size: 9px;
   padding-bottom: 10px;
   margin-bottom: 10px;
+}
+
+#submitform {
+  margin-bottom: 25px;
+}
+
+#pets-list > li {
+  margin-bottom: 50px;
 }

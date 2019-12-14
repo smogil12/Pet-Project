@@ -8,8 +8,10 @@ $(document).ready(function() {
         gender: $('input[name="gender"]:checked').val(),
         age: $('input[name="age"]:checked').val(),
         status: $('input[name="status"]:checked').val(),
-        kids: $('input[name="kids"]:checked').val(),
-        dogs: $('input[name="dogs"]:checked').val()
+        good_with_children: $('input[name="kids"]:checked').val(),
+        good_with_dogs: $('input[name="dogs"]:checked').val(),
+        location: $('input[name="zip"]').val()
+
       },
       function(pets) {
         pets.forEach(function(pet) {

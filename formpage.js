@@ -11,11 +11,18 @@ $(document).ready(function() {
         good_with_children: $('input[name="kids"]:checked').val(),
         good_with_dogs: $('input[name="dogs"]:checked').val(),
         location: $('input[name="zip"]').val()
-
       },
       function(pets) {
         pets.forEach(function(pet) {
-          $("#pets-list").append(`<li>${pet.name}</li>`);
+          $("#pets-list").append(`
+            <li>
+                <a href="${pet.url}">
+                    <img src="${pet.photos[0].small}"><img>
+                    <p>${pet.name}</p>
+                </a>
+             </li>
+        `);
+
           console.log(pet);
         });
       }

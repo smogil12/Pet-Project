@@ -11,6 +11,7 @@ $(document).ready(function() {
         good_with_children: $('input[name="kids"]:checked').val(),
         good_with_dogs: $('input[name="dogs"]:checked').val(),
         location: $('input[name="zip"]').val()
+
       },
       function(pets) {
         pets.forEach(function(pet) {

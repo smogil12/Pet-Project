@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <p>What size of a dog would you like?</p>
+    <form name="form1" action="">
+      <input type="radio" name="size" value="small" /> Small
+      <input type="radio" name="size" value="medium" /> Medium
+      <input type="radio" name="size" value="large" /> Large
+    </form>
+    <p>What gender do you prefer for a dog?</p>
+    <form name="form2" action="">
+      <input type="radio" name="gender" value="male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+    </form>
+    <p>How old would you like your dog to be?</p>
+    <form name="form3" action="">
+      <input type="radio" name="age" value="baby" /> Baby
+      <input type="radio" name="age" value="young" /> Young
+      <input type="radio" name="age" value="adult" /> Adult
+      <input type="radio" name="age" value="senior" /> Senior
+    </form>
+    <p>
+      If you had to choose, would you rather have an adoptable, adopted, or
+      found dog?
+    </p>
+    <form name="form4" action="">
+      <input type="radio" name="status" value="adoptable" /> Adoptable
+      <input type="radio" name="status" value="adopted" /> Adopted
+      <input type="radio" name="status" value="found" /> Found
+    </form>
+    <p>Do you have kids?</p>
+    <form name="form5" action="">
+      <input type="radio" name="kids" value="true" /> Yes
+      <input type="radio" name="kids" value="false" /> No
+    </form>
+    <p>Do you have other dogs?</p>
+    <form name="form6" action="">
+      <input type="radio" name="dogs" value="true" /> Yes
+      <input type="radio" name="dogs" value="false" /> No
+    </form>
+
+    <br />
+
+    <p>What is your Zipcode?</p>
+
+    <input type="text" name="zip" id="zip" />
+
+    <br></br>
+
+    <form>
+      <input type="submit" id="submitform" />
+    </form>
+    <ul id="pets-list"></ul>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="petfindernewapi.js"></script>
+  <script src="formpage.js"></script>
+</html>

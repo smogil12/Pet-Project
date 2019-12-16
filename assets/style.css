@@ -24,11 +24,6 @@ h4 {
   color: #444444;
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
 /* below are the styles for sliding images on social page */
 /* .galleryContainer {
   width: 50%;
@@ -54,7 +49,6 @@ h2 {
   height: 100%;
   position: absolute;
 } */
-
 
 /* .slider-image {
   float: left;
@@ -90,28 +84,45 @@ h2 {
   width: 200;
   height: 200;
   padding: 5px;
-  margin: 5px;
+  margin: 2px 3px;
   cursor: pointer;
 }
 
+/* below are the styles for rescue me gallery */
+
 #main-container {
-  max-height: 365px;
+  /* max-height: 365px; */
+  max-height: 500px;
   overflow-y: scroll;
+}
+
+#carousel {
+  max-height: 500px;
+  overflow-y: scroll;
+  margin: 20px 30px 10px 120px;
 }
 
 .navbar {
   height: 100px;
-  width: 1440px;
+  width: 100%;
   background-color: lightskyblue;
 }
-
-/* .navbar-menu:hover {
- text-decoration-color: mediumpurple;
-} */
+.buttons {
+  margin-right: 40px;
+}
 
 #logo {
   margin: 5px 20px 10px 40px;
   height: 90px;
+}
+
+#welcome-home {
+  margin: 20px 0;
+}
+
+.questionnaire {
+  margin-left: 180px;
+  line-height: 1.5;
 }
 
 .footer {
@@ -123,7 +134,8 @@ h2 {
   font-size: 13px;
   text-align: center;
   height: 125px;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   bottom: 0px;
 }
@@ -137,8 +149,11 @@ h2 {
 
 #submitform {
   margin-bottom: 25px;
+  background-color: lightcyan;
+  border: solid 1px lightgrey;
+  cursor: pointer;
 }
 
 #pets-list > li {
-  margin-bottom: 50px;
+  margin-bottom: 130px;
 }

@@ -13,78 +13,133 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <section class="section is-paddingless">
-      <div class="container is-fullhd is-marginless">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <img
-              src="assets/images/carousel-pics/dog.png"
-              id="logo"
-              class="spot"
-              alt="dog silhouette"
-            />
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img
+          src="assets/images/carousel-pics/dog.png"
+          id="logo"
+          class="spot"
+          alt="dog silhouette"
+        />
 
-            <!-- <a class="navbar-item" href="https://bulma.io"> -->
-            <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        <!-- <a class="navbar-item" href="https://bulma.io"> -->
+        <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
                           </a> -->
 
-            <a
-              role="button"
-              class="navbar-burger burger"
-              aria-label="menu"
-              aria-expanded="false"
-              data-target="navbarBasicExample"
-            >
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="index.html" class="navbar-item">
+            Home
+          </a>
+          <a href="aboutus.html" class="navbar-item">
+            About Us
+          </a>
+          <a href="aboutyou.html" class="navbar-item">
+            About You
+          </a>
+          <a href="rescue.html" class="navbar-item">
+            Rescue Me
+          </a>
+          <a href="shelters.html" class="navbar-item">
+            Shelters In Your Area
+          </a>
+          <a href="donate.html" class="navbar-item">
+            Donate!
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
             </a>
           </div>
-
-          <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-              <a href="index.html" class="navbar-item">
-                Home
-              </a>
-              <a href="aboutus.html" class="navbar-item">
-                About Us
-              </a>
-              <a href="aboutyou.html" class="navbar-item">
-                About You
-              </a>
-              <a href="rescue.html" class="navbar-item">
-                Rescue Me
-              </a>
-              <a href="shelters.html" class="navbar-item">
-                Shelters In Your Area
-              </a>
-              <a href="donate.html" class="navbar-item">
-                Donate!
-              </a>
-            </div>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
+        </div>
+      </div>
+    </nav>
+        <section class="hero">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                  Spot On Rescue
+                </h1>
+                <h2 class="subtitle">About<strong> You</strong>!</h2>
               </div>
             </div>
-          </div>
-        </nav>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="subtitle">About<strong> You!</strong></p>
+          </section>
+  <section>    
+<div class="questionnaire">
+        <p><strong>What size of a dog would you like?</strong></p>
+        <form name="form1" action="">
+          <input type="radio" name="size" value="small" /> Small
+          <input type="radio" name="size" value="medium" /> Medium
+          <input type="radio" name="size" value="large" /> Large
+        </form>
+        <p><strong>What gender do you prefer for a dog?</strong></p>
+        <form name="form2" action="">
+          <input type="radio" name="gender" value="male" /> Male
+          <input type="radio" name="gender" value="female" /> Female
+        </form>
+        <p><strong>How old would you like your dog to be?</strong></p>
+        <form name="form3" action="">
+          <input type="radio" name="age" value="baby" /> Baby
+          <input type="radio" name="age" value="young" /> Young
+          <input type="radio" name="age" value="adult" /> Adult
+          <input type="radio" name="age" value="senior" /> Senior
+        </form>
+        <p><strong>
+          If you had to choose, would you rather have an adoptable, adopted, or
+          found dog?</strong>
+        </p>
+        <form name="form4" action="">
+          <input type="radio" name="status" value="adoptable" /> Adoptable
+          <input type="radio" name="status" value="adopted" /> Adopted
+          <input type="radio" name="status" value="found" /> Found
+        </form>
+        <p><strong>Do you have kids?</strong></p>
+        <form name="form5" action="">
+          <input type="radio" name="kids" value="true" /> Yes
+          <input type="radio" name="kids" value="false" /> No
+        </form>
+        <p><strong>Do you have other dogs?</strong></p>
+        <form name="form6" action="">
+          <input type="radio" name="dogs" value="true" /> Yes
+          <input type="radio" name="dogs" value="false" /> No
+        </form>
+
+        <br />
+
+        <p><strong>What's your Zipcode?</strong></p>
+
+        <input type="text" name="zip" id="zip" />
+
+        <br></br>
+
+        <form>
+          <input type="submit" id="submitform" />
+        </form>
+        <ul id="pets-list"></ul>
       </div>
     </section>
 
@@ -120,5 +175,8 @@
         </p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="petfindernewapi.js"></script>
+    <script src="formpage.js"></script>
   </body>
 </html>

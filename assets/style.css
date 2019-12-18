@@ -146,6 +146,12 @@ h4 {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+<<<<<<< HEAD
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+ }
+=======
 
 #submitform {
   margin-bottom: 25px;
@@ -157,3 +163,4 @@ h4 {
 #pets-list > li {
   margin-bottom: 130px;
 }
+>>>>>>> 304ec8a4c6fe3e072db822f9c8f6e6b60d476b73

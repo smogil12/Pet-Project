@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px; /* The height is 400 pixels */
+        width: 100%; /* The width is the width of the web page */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb037q7cMTQoJY1nYrAgfINH2h7KtL4WA&libraries=places"
+    ></script>
+
+    <script>
+      var map;
+      $.ajax({
+        url:
+          "https://maps.googleapis.com/maps/api/geocode/json?components=postal_code:10010&key=AIzaSyBb037q7cMTQoJY1nYrAgfINH2h7KtL4WA",
+        success: function(response) {
+          console.log(response.results[0].geometry.location);
+
+          var longAndLat = response.results[0].geometry.location;
+          var location = new google.maps.LatLng(longAndLat.lat, longAndLat.lng);
+          map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 11,
+            center: location
+          });
+
+          var request = {
+            location: location,
+            radius: "8000", // meters
+            keyword: "animal_shelters"
+          };
+
+          service = new google.maps.places.PlacesService(map);
+          service.nearbySearch(request, callback);
+        },
+        error: e => {
+          console.error(e);
+        }
+      });
+
+      function callback(results, status) {
+        console.log(results);
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            var place = results[i];
+            //createMarker(results[i]);
+            console.log(results[i]);
+            var newLocation = {
+              lat: results[i].geometry.location.lat(),
+              lng: results[i].geometry.location.lng()
+            };
+            var marker = new google.maps.Marker({
+              position: newLocation,
+              map: map
+            });
+          }
+        }
+      }
+      //
+    </script>
+  </body>
+</html>

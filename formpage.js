@@ -17,7 +17,7 @@ $(document).ready(function() {
           $("#pets-list").append(`
             <li>
                 <a href="${pet.url}">
-                    <img src="${pet.photos[0].small}"><img>
+                    <img src="${pet.photos[0].medium}"><img>
                     <p>${pet.name}</p>
                 </a>
              </li>

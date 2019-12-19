@@ -32,7 +32,6 @@ h4 {
   color: #444444;
 }
 
-
 h2,
 h3,
 h5 {
@@ -45,7 +44,6 @@ h5 {
   margin-bottom: 20px;
 }
 
-
 /* #container {
   background-color: #ffffff;
   padding: 30px;
@@ -57,7 +55,6 @@ h5 {
   clear: both;
 } */
 
-
 /* these styles taken from basic portfolio format*/
 
 .container-home,
@@ -67,7 +64,7 @@ h5 {
   margin: 0 auto;
   clear: both;
   padding-bottom: 150px;
-
+  /* padding-bottom: 100px; */
 }
 
 .main-container {
@@ -95,13 +92,13 @@ h5 {
 .portrait {
   width: 200;
   height: 200;
-  padding: 5px;
-  margin: 2px 3px;
+  /* padding: 5px; */
+  /* margin: 2px 3px; */
+  margin: 3px 2px 2px 2px;
   cursor: pointer;
 }
 
 /* below are the styles for rescue me gallery */
-
 
 /* #container-rescue {
   max-height: 365px;
@@ -115,20 +112,18 @@ h5 {
   overflow-y: scroll;
 } */
 
-
 #main-container {
   /* max-height: 365px; */
   max-height: 500px;
   overflow-y: scroll;
+  
 }
 
 #carousel {
-  max-height: 500px;
-  overflow-y: scroll;
-
-  /* margin: 20px 30px 10px 120px; */
-  margin: 0 50px 120px 50px;
-
+  max-height: 800px;
+  /* overflow-y: scroll; */
+  width: 900px;
+  margin: 0 50px 10px 30px;
 }
 
 .navbar {
@@ -146,7 +141,6 @@ h5 {
 }
 
 #welcome-home {
-
   /* margin: 20px 0; */
   margin: 0 auto;
   margin-bottom: 40px;

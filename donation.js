@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     var database = firebase.database();
 
     var initialDonation = 0;

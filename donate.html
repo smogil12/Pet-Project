@@ -16,23 +16,9 @@
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>     
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyA5BArSRvILYVtSqaADwcEgMs9t9cznp44",
-        authDomain: "dog-donation.firebaseapp.com",
-        databaseURL: "https://dog-donation.firebaseio.com",
-        projectId: "dog-donation",
-        storageBucket: "dog-donation.appspot.com",
-        messagingSenderId: "724454295715",
-        appId: "1:724454295715:web:5617a0af99d34176ce5716"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
   </head>
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -212,6 +198,28 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+  // Your web app's Firebase configuration
+     var firebaseConfig = {
+      apiKey: "AIzaSyA5BArSRvILYVtSqaADwcEgMs9t9cznp44",
+      authDomain: "dog-donation.firebaseapp.com",
+      databaseURL: "https://dog-donation.firebaseio.com",
+      projectId: "dog-donation",
+      storageBucket: "dog-donation.appspot.com",
+      messagingSenderId: "724454295715",
+      appId: "1:724454295715:web:5617a0af99d34176ce5716"
+     };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script src="donation.js"></script>
   </body>
 </html>

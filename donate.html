@@ -13,28 +13,26 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-    
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
 
-     
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
 
     <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyA5BArSRvILYVtSqaADwcEgMs9t9cznp44",
-      authDomain: "dog-donation.firebaseapp.com",
-      databaseURL: "https://dog-donation.firebaseio.com",
-      projectId: "dog-donation",
-      storageBucket: "dog-donation.appspot.com",
-      messagingSenderId: "724454295715",
-      appId: "1:724454295715:web:5617a0af99d34176ce5716"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyA5BArSRvILYVtSqaADwcEgMs9t9cznp44",
+        authDomain: "dog-donation.firebaseapp.com",
+        databaseURL: "https://dog-donation.firebaseio.com",
+        projectId: "dog-donation",
+        storageBucket: "dog-donation.appspot.com",
+        messagingSenderId: "724454295715",
+        appId: "1:724454295715:web:5617a0af99d34176ce5716"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
     </script>
-
   </head>
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -125,32 +123,32 @@
       </section>
       <div class="recentdisplay">
         <h3 class="">
-            <strong>Recent Donator:</strong>
-            <span id="mostRecentDonator"></span>
+          <strong>Recent Donator:</strong>
+          <span id="mostRecentDonator"></span>
         </h3>
         <h3 class="">
-            <strong>Recent Donation:</strong>
-            <span id="mostRecentDonation"></span>
+          <strong>Recent Donation:</strong>
+          <span id="mostRecentDonation"></span>
         </h3>
-    </div>
+      </div>
       <div class="field">
         <label class="label">Name</label>
         <div class="control">
-          <input class="input" type="text" id="donatorName">
+          <input class="input" type="text" id="donatorName" />
         </div>
       </div>
-      
+
       <div class="field">
         <label class="label">Email Address</label>
         <div class="control">
-          <input class="input" type="email">
-        </div>  
+          <input class="input" type="email" />
+        </div>
       </div>
-      
+
       <div class="field">
         <label class="label">Phone Number</label>
         <div class="control">
-          <input class="input" type="number" >
+          <input class="input" type="number" />
         </div>
       </div>
 
@@ -165,7 +163,12 @@
           </span>
         </p>
         <p class="control">
-          <input class="input" type="text" placeholder="Amount of money" id="donationAmount">
+          <input
+            class="input"
+            type="text"
+            placeholder="Amount of money"
+            id="donationAmount"
+          />
         </p>
         <p class="control">
           <button id="button">
@@ -210,6 +213,5 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="donation.js"></script>
-
   </body>
 </html>
